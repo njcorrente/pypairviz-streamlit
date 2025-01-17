@@ -6,6 +6,12 @@ import plotly.graph_objects as go
 from dataclasses import dataclass
 import math
 
+"""
+pyPairViz-Streamlit: A web-based implementation of molecular pair potential visualization
+Based on the original pyPairViz (https://github.com/njcorrente/pyPairViz) by Nick Corrente
+This version adapts the functionality to a web interface using Streamlit
+"""
+
 # Model definitions
 @dataclass
 class PotentialModel:
@@ -300,6 +306,17 @@ def create_potential_plot(model, r, V, distance, current_V, y_max_factor=10):
 def main():
     st.set_page_config(layout="wide")
     st.title("Molecular Interaction Potential Visualizer")
+    
+    # Add acknowledgment as a small text below the title
+    st.markdown("""
+    <div style='font-size: 0.8em; color: #666;'>
+    Based on the original <a href='https://github.com/njcorrente/pyPairViz' target='_blank'>pyPairViz</a> by Nick Corrente. 
+    This is a web-based implementation using Streamlit.
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Add a visual separator
+    st.markdown("---")
     
     # Initialize session state
     if 'current_distance' not in st.session_state:
