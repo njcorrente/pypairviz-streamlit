@@ -1,9 +1,6 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-from import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
 import plotly.graph_objects as go
 from dataclasses import dataclass
