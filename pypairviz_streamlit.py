@@ -1,6 +1,9 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
+from import streamlit as st
+import numpy as np
+import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
 import plotly.graph_objects as go
 from dataclasses import dataclass
@@ -11,6 +14,17 @@ pyPairViz-Streamlit: A web-based implementation of molecular pair potential visu
 Based on the original pyPairViz (https://github.com/njcorrente/pyPairViz) by Nick Corrente
 This version adapts the functionality to a web interface using Streamlit
 """
+
+# Configure the Streamlit page
+st.set_page_config(
+    page_title="Molecular Interaction Potential Visualizer",
+    page_icon="⚛️",
+    layout="wide",
+    initial_sidebar_state="auto",
+    menu_items={
+        'About': "# Molecular Interaction Potential Visualizer\n\nBased on the original [pyPairViz](https://github.com/njcorrente/pyPairViz) by Nick Corrente."
+    }
+)
 
 # Model definitions
 @dataclass
@@ -304,7 +318,6 @@ def create_potential_plot(model, r, V, distance, current_V, y_max_factor=10):
     return fig
 
 def main():
-    st.set_page_config(layout="wide")
     st.title("Molecular Interaction Potential Visualizer")
     
     # Add acknowledgment as a small text below the title
