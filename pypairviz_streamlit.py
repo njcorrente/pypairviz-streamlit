@@ -6,12 +6,6 @@ import plotly.graph_objects as go
 from dataclasses import dataclass
 import math
 
-"""
-pyPairViz-Streamlit: A web-based implementation of molecular pair potential visualization
-Based on the original pyPairViz (https://github.com/njcorrente/pyPairViz) by Nick Corrente
-This version adapts the functionality to a web interface using Streamlit
-"""
-
 # Configure the Streamlit page
 st.set_page_config(
     page_title="Molecular Interaction Potential Visualizer",
@@ -22,6 +16,14 @@ st.set_page_config(
         'About': "# Molecular Interaction Potential Visualizer\n\nBased on the original [pyPairViz](https://github.com/njcorrente/pyPairViz) by Nick Corrente."
     }
 )
+
+"""
+pyPairViz-Streamlit: A web-based implementation of molecular pair potential visualization
+Based on the original pyPairViz (https://github.com/njcorrente/pyPairViz) by Nick Corrente
+This version adapts the functionality to a web interface using Streamlit
+"""
+
+
 
 # Model definitions
 @dataclass
