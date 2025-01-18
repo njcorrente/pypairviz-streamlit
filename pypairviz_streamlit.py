@@ -380,7 +380,7 @@ def main():
     with col1:
         st.header("Molecule Visualization")
         distance = st.slider("Molecular Distance (Å)", 
-                           min_value=2.0, 
+                           min_value=0.5, 
                            max_value=10.0, 
                            value=st.session_state.current_distance,
                            step=0.1)
