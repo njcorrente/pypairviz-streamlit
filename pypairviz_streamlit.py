@@ -13,17 +13,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="auto",
     menu_items={
-        'About': "# Molecular Interaction Potential Visualizer\n\nBased on the original [pyPairViz](https://github.com/njcorrente/pyPairViz) by Nick Corrente."
+        'About': "# Molecular Interaction Potential Visualizer\n\nBased on the original [pyPairViz](https://github.com/njcorrente/pyPairViz) by [Nick Corrente](https://github.com/njcorrente)."
     }
 )
-
-"""
-pyPairViz-Streamlit: A web-based implementation of molecular pair potential visualization
-Based on the original pyPairViz (https://github.com/njcorrente/pyPairViz) by Nick Corrente
-This version adapts the functionality to a web interface using Streamlit
-"""
-
-
 
 # Model definitions
 @dataclass
