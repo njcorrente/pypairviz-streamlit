@@ -314,7 +314,7 @@ def main():
     # Add acknowledgment as a small text below the title
     st.markdown("""
     <div style='font-size: 0.8em; color: #666;'>
-    Based on the original <a href='https://github.com/njcorrente/pyPairViz' target='_blank'>pyPairViz</a> by Nick Corrente. 
+    Based on the original <a href='https://github.com/njcorrente/pyPairViz' target='_blank'>pyPairViz</a> by <a href='https://github.com/njcorrente' target='_blank'>Nick Corrente</a>. 
     This is a web-based implementation using Streamlit.
     </div>
     """, unsafe_allow_html=True)
